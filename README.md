@@ -26,4 +26,6 @@ React-App installation
 1. npm intall
 2. npm start
 
+Note: If there is an error on fetching data from api: locate to https://localhost:5001 > Advanced > proceed To localhost:5001
+
 Hope you will like it :)
