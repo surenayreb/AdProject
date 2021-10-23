@@ -4,7 +4,7 @@ Api installation
 
 -Install .Net SDK From https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.402-windows-x64-installer
 
--Open cmd prompt in [Repository]/Project/back/VerveCallenge/VerveCallenge Folder (Where belongs VerveChallenge.csproj)
+-Open cmd prompt in [Repository]/AdProject/back/VerveCallenge/VerveCallenge Folder (Where belongs VerveChallenge.csproj)
 
 -Run following commands:
 
@@ -19,7 +19,7 @@ React-App installation
 
 -Install node-js from https://nodejs.org/en/ (version 14.18.1)
 
--Open cmd prompt in open cmd prompt in [Repository]/Project/front Folder (Where belongs package.json)
+-Open cmd prompt in open cmd prompt in [Repository]/AdProject/front Folder (Where belongs package.json)
 
 -Run following commands:
 
