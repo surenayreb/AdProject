@@ -19,7 +19,7 @@ React-App installation
 
 -Install node-js from https://nodejs.org/en/ (version 14.18.1)
 
--Open cmd prompt in open cmd prompt in [Repository]/AdProject/front Folder (Where belongs package.json)
+-Open cmd prompt in [Repository]/AdProject/front Folder (Where belongs package.json)
 
 -Run following commands:
 
