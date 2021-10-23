@@ -41,9 +41,9 @@ const CampaignDetails = (props) => {
                         <br />
                         <div>
                             {hoursInDay.map(h => (
-                                <div>
+                                <div key={h}>
                                     <input type="checkbox" name={"cb" + h} checked={detailsData.activeHours?.includes(h+"")} onChange={(e) => _selectHour(h, e)} />
-                                    <label for={"cb" + h}> {h}:00</label>
+                                    <label htmlFor={"cb" + h}> {h}:00</label>
                                 </div>
                             ))
                             }
@@ -55,13 +55,13 @@ const CampaignDetails = (props) => {
                     <div className="campaigns">
                         <ol>
                             {detailsData.banners?.map(b => (
-                                <li> {b.name} <a className="link" onClick={() => _removeBanner(b)}>[ X remove ]</a></li>
+                                <li key={b.id}> {b.name} <a className="link" onClick={() => _removeBanner(b)}>[ X remove ]</a></li>
                             ))}
                         </ol>
                         <select onChange={(e) => _selectBanner(e)}>
                             <option value="" selected disabled hidden>Add banner</option>
                             {allBanners?.filter(c => !detailsData?.banners?.some(dc => dc.id === c.id)).map(c => (
-                                <option value={c.id}>{c.name}</option>
+                                <option value={c.id} key={c.id}>{c.name}</option>
                             ))}
                         </select>
                     </div>

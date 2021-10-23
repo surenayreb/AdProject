@@ -131,7 +131,7 @@ const Main = () => {
     const _handleAddNewCampaign = async () => {
         const data = { name: newCampaignName };
         await campaignsApi.addNewCampaign(data);
-        setShowAddNewBanner(false);
+        setShowAddNewCampaign(false);
         await _getCampaigns();
     }
 

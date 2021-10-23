@@ -8,7 +8,7 @@ const Campaigns = (props) => {
     const [nowHour, setNowHour] = React.useState(moment().format("HH"));
 
     const _getActivityBadge = (campaign) => {
-        const status = campaign.activeHours.includes(nowHour) ? "active-campaign" : "inactive-campaign";
+        const status = campaign.activeHours.filter(h => +h === +nowHour).length > 0 ? "active-campaign" : "inactive-campaign";
         return status;
     }
 

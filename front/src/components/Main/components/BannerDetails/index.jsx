@@ -33,13 +33,13 @@ const BannerDetails = (props) => {
                     <div className="campaigns">
                         <ol>
                             {detailsData.campaigns?.map(c => (
-                                <li> {c.name} <a className="link" onClick={() => _removeCampaign(c)}>[ X remove ]</a></li>
+                                <li key={c.id}> {c.name} <a className="link" onClick={() => _removeCampaign(c)}>[ X remove ]</a></li>
                             ))}
                         </ol>
                         <select onChange={(e) => _selectCampaign(e)}>
                             <option value="" selected disabled hidden>Add campaign</option>
                             {allCampaigns?.filter(c => !detailsData?.campaigns?.some(dc => dc.id === c.id)).map(c => (
-                                <option value={c.id}>{c.name}</option>
+                                <option value={c.id} key={c.id}>{c.name}</option>
                             ))}
                         </select>
                     </div>
